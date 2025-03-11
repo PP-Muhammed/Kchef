@@ -1,0 +1,143 @@
+/* pages/MealPage.css */
+
+.meal-page {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #5e3c3c, #2b1818);
+    min-height: 100vh;
+  }
+  
+  .meal-page h1 {
+    margin-bottom: 20px;
+    color: #d6d3d3;
+  }
+  
+  .food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .food-card {
+    background: linear-gradient(90deg, #000000 0%, #FF1E1E 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .food-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .food-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .food-card h3 {
+    margin: 10px 0;
+    color: #d0c9c9;
+  }
+  
+  .food-card button {
+    padding: 10px 15px;
+    background-color: #b42a2a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* margin-right: 10px; */
+    display: inline;
+    gap: 10px;
+    margin-top: 10px;
+    width: 210px;
+  }
+  
+  .food-card button:hover {
+    background-color: #e60000;
+  }
+  
+  .meal-page {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px); /* Slide in from below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Final position */
+    }
+  }
+  
+  /* Food card hover effect for interaction */
+  .food-card {
+    animation: slideIn 0.7s ease-out; /* Initial slide-in effect */
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px); /* Slide in from left */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Final position */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .food-card button {
+      padding: 8px; /* Reduce padding on smaller screens */
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }
+  
+    .food-card .button-group {
+      gap: 8px; /* Reduce gap between buttons */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .food-card button {
+      padding: 6px; /* Further reduce padding for small devices */
+      font-size: 0.8rem; /* Smaller font size */
+      width: 100%; /* Full-width buttons for very small screens */
+    }
+  
+    .food-card .button-group {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 6px; /* Reduce gap for vertical layout */
+    }
+  }
+  
+  .food-card {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .food-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  

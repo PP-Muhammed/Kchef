@@ -1,0 +1,128 @@
+.chatbot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("pexels-enginakyurt-2673353.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.prompt-box {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid #ff4d4d;
+    border-radius: 15px;
+    width: 420px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.prompt-box h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff4d4d;
+    text-transform: uppercase;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.prompt-box input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 100px;
+    border-radius: 25px;
+    border: 2px solid #ff4d4d;
+    outline: none;
+    margin-bottom: 15px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.prompt-box input:focus {
+    border-color: #ff1a1a;
+}
+
+.mic-btn {
+    position: absolute;
+    right: 50px;
+    bottom:20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff4d4d;
+    font-size: 1.4rem;
+    outline: none;
+    transition: color 0.3s;
+}
+
+.mic-btn:hover {
+    color: #e60000;
+    transform: scale(1.1);
+}
+
+.send-btn {
+    position: absolute;
+    right: 20px;
+    bottom:20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff4d4d;
+    font-size: 1.4rem;
+    outline: none;
+    transition: color 0.3s;
+}
+
+
+.send-btn:hover {
+    transform: scale(1.1);
+    color: #e60000;
+}
+
+.download-btn {
+    padding: 12px;
+    background: linear-gradient(45deg, #ff4d4d, #ff1a1a);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.download-btn:hover {
+    background: linear-gradient(45deg, #e60000, #b30000);
+    transform: scale(1.07);
+}
+
+.output {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ff4d4d;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1rem;
+    overflow-y: auto;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.output p {
+    margin: 5px 0;
+}
