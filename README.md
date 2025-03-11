@@ -1,4 +1,5 @@
-# Cooking Enthusiasts Web App
+# KURIOUSCHEF 
+### Cooking Enthusiasts Web App
 
 ## Overview
 
