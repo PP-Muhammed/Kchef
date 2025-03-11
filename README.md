@@ -1,10 +1,10 @@
-Cooking Enthusiasts Web App
+#Cooking Enthusiasts Web App
 
-Overview
+##Overview
 
 This web application is designed for cooking enthusiasts, offering a variety of features to help users discover, save, and generate recipes based on ingredients they have or food images they upload.
 
-Features
+##Features
 
 Recipe Search: Find recipes based on ingredients you have.
 
@@ -20,7 +20,7 @@ Accepts voice input for queries.
 
 Provides a PDF download option for recipes and instructions (download available after bot response completion).
 
-Tech Stack
+##Tech Stack
 
 Frontend: React.js, MUI components
 
@@ -30,7 +30,7 @@ APIs: Spoonacular API (for fetching recipes and nutritional information)
 
 AI Features: Uses Resnet50 for Image processing for food recognition
 
-Usage
+##Usage
 
 Search for recipes by entering ingredients.
 
@@ -40,7 +40,7 @@ Save favorite recipes for later.
 
 Use the chatbot for voice-based interaction and recipe downloads.
 
-Upcoming Enhancements
+##Upcoming Enhancements
 
 User authentication: Enable user accounts to save preferences.
 
@@ -48,6 +48,6 @@ Advanced AI enhancements: Improve image recognition for food items.
 
 Enhanced chatbot: More interactive features and suggestions.
 
-Contributors
+##Contributors
 
 P P Muhammed , Adil Nabhan C V , Safa Musthafa , Vyshnav P
